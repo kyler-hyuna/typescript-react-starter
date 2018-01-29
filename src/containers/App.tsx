@@ -1,7 +1,7 @@
 import React from 'react';
 const Image = require('../assets/image.jpg');
 
-const value = require('../assets/names.json');
+import value from '../assets/names.json';
 
 const App = () => (
   <>

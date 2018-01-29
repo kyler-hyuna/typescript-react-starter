@@ -1,6 +1,11 @@
 const path = require('path');
 const webpack = require('webpack');
+
+// Inject script into html
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+// Clean dist folder after ever build
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: ['react-hot-loader/patch', './src/index.tsx'],
@@ -8,7 +13,6 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
   },
-  devtool: 'inline-source-map',
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json'],
   },
@@ -18,6 +22,7 @@ module.exports = {
       {
         test: /\.tsx?$/,
         use: ['react-hot-loader/webpack', 'awesome-typescript-loader'],
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/,
@@ -27,17 +32,18 @@ module.exports = {
         test: /\.(png|svg|jpg|gif)$/,
         use: ['file-loader'],
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: ['file-loader'],
+      },
     ],
   },
   plugins: [
+    new CleanWebpackPlugin(['dist']),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      chunksSortMode: 'dependency',
       template: path.resolve(__dirname, './public/index.html'),
     }),
   ],
-  devServer: {
-    hot: true,
-  },
 };
