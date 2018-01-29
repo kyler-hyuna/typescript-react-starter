@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it should work 1`] = `
+Array [
+  <h1>
+    A new react project
+  </h1>,
+  <p>
+    na
+  </p>,
+  <p>
+    ma
+  </p>,
+  <img
+    alt=""
+    src="test-file-stub"
+  />,
+]
+`;
