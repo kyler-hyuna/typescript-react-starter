@@ -3,7 +3,8 @@
 exports[`it should work 1`] = `
 Array [
   <h1>
-    A new react project
+    0
+     new react projects
   </h1>,
   <p>
     na
