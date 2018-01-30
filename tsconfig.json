@@ -6,7 +6,9 @@
     "jsx": "react",
     "strict": true,
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   },
   "include": ["src"],
   "compileOnSave": false

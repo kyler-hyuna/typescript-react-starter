@@ -15,5 +15,10 @@ Array [
     alt=""
     src="test-file-stub"
   />,
+  <button
+    onClick={[Function]}
+  >
+    Hey
+  </button>,
 ]
 `;
