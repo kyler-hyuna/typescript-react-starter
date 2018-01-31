@@ -1,6 +1,6 @@
 import React from 'react'
-const Image = require('../assets/image.jpg')
-import value from '../assets/names.json'
+const Image = require('../../assets/image.jpg')
+import value from '../../assets/names.json'
 
 import * as actions from '@actions'
 import { Store } from '@types'
@@ -26,7 +26,7 @@ export class App extends React.Component<Props> {
 
         <img src={Image} alt="" />
 
-        <button onClick={() => this.props.increment()}>Hey</button>
+        <button onClick={this.props.increment}>Hey</button>
       </>
     )
   }
