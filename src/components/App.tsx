@@ -16,7 +16,7 @@ interface ConnectedDispatch {
 
 type Props = ConnectedProps & ConnectedDispatch
 
-class App extends React.Component<Props> {
+export class App extends React.Component<Props> {
   render() {
     return (
       <>
