@@ -11,7 +11,7 @@ Built On Webpack
 * [x] Testing (jest, enzyme)
 * [x] Linting (tslint)
 * [x] Hot Reloading
-* [ ] Redux
+* [x] Redux
 * [ ] Sass
 * [ ] React Router
 * [ ] Styleguide

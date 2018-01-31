@@ -1,20 +1,17 @@
-const path = require('path');
-const webpack = require('webpack');
+const path = require('path')
+const webpack = require('webpack')
 
 // Inject script into html
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 // Clean dist folder after ever build
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
   entry: ['react-hot-loader/patch', './src/index.tsx'],
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
-  },
-  resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.json'],
   },
   module: {
     rules: [
@@ -38,6 +35,16 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    alias: {
+      '@components': path.resolve(__dirname, 'src/components'),
+      '@actions': path.resolve(__dirname, 'src/actions'),
+      '@constants': path.resolve(__dirname, 'src/constants'),
+      '@reducers': path.resolve(__dirname, 'src/reducers'),
+      '@types': path.resolve(__dirname, 'src/types'),
+    },
+  },
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new webpack.NamedModulesPlugin(),
@@ -46,4 +53,4 @@ module.exports = {
       template: path.resolve(__dirname, './public/index.html'),
     }),
   ],
-};
+}

@@ -26,3 +26,5 @@ yarn-error.log*
 .idea
 storybook-static
 dist
+src/**/*.js
+src/**/*.js.map

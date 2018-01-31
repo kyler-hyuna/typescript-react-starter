@@ -1,28 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
-import App from './containers/App';
-import './index.css';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import { AppContainer } from 'react-hot-loader'
+import App from './components/App'
+import { configureStore } from './store/configureStore'
+import './index.css'
 
-const rootEl = document.getElementById('root');
+const rootEl = document.getElementById('root')
+
+const store = configureStore()
 
 ReactDOM.render(
   <AppContainer>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </AppContainer>,
   rootEl
-);
+)
 
 // Webpack Hot Module Replacement API
 if (module.hot) {
-  module.hot.accept('./containers/App', () => {
-    const NextApp = require('./containers/App').default;
+  module.hot.accept('./components/App', () => {
+    const NextApp = require('./components/App').default
 
     ReactDOM.render(
       <AppContainer>
-        <NextApp />
+        <Provider store={store}>
+          <NextApp />
+        </Provider>
       </AppContainer>,
       rootEl
-    );
-  });
+    )
+  })
 }

@@ -10,6 +10,7 @@
         "esSpecCompliant": true
       }
     ],
+    "no-implicit-dependencies": false,
     "semicolon": false,
     "jsx-boolean-value": false,
     "member-access": false,
