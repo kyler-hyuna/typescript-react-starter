@@ -12,7 +12,7 @@ Built On Webpack
 * [x] Linting (tslint)
 * [x] Hot Reloading
 * [x] Redux
-* [ ] Sass
+* [x] Sass
 * [ ] React Router
 * [ ] Styleguide
 * [ ] Precommit Hooks

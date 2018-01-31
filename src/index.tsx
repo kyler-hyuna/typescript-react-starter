@@ -4,7 +4,7 @@ import { Provider } from 'react-redux'
 import { AppContainer } from 'react-hot-loader'
 import App from './components/App'
 import { configureStore } from './store/configureStore'
-import './index.css'
+import './index.scss'
 
 const rootEl = document.getElementById('root')
 
