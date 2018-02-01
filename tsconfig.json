@@ -15,7 +15,8 @@
       "@components": ["components"],
       "@constants": ["constants"],
       "@reducers": ["reducers"],
-      "@types": ["types"]
+      "@types": ["types"],
+      "@routes": ["routes"]
     }
   },
   "include": ["src"],

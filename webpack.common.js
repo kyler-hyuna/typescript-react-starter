@@ -43,6 +43,7 @@ module.exports = {
       '@constants': path.resolve(__dirname, 'src/constants'),
       '@reducers': path.resolve(__dirname, 'src/reducers'),
       '@types': path.resolve(__dirname, 'src/types'),
+      '@routes': path.resolve(__dirname, 'src/routes'),
     },
   },
   plugins: [

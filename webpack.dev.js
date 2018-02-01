@@ -8,6 +8,7 @@ module.exports = merge(common, {
     hot: true,
     stats: 'minimal',
     stats: 'errors-only',
+    historyApiFallback: true,
   },
   module: {
     rules: [

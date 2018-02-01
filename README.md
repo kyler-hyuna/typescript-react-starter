@@ -13,6 +13,6 @@ Built On Webpack
 * [x] Hot Reloading
 * [x] Redux
 * [x] Sass
-* [ ] React Router
+* [x] React Router
 * [ ] Styleguide
 * [ ] Precommit Hooks

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main should work 1`] = `
+<a
+  href="/app"
+  onClick={[Function]}
+>
+  Go to App
+</a>
+`;
