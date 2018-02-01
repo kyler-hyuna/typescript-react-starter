@@ -9,7 +9,7 @@ const store = configureStore()
 
 export default () => (
   <AppContainer>
-    <Providestore={store}>
+    <Provider store={store}>
       <Routes />
     </Provider>
   </AppContainer>
