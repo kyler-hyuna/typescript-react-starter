@@ -11,7 +11,8 @@
     "lint": "tslint 'src/**/*.ts?(x)' --format stylish",
     "test": "jest --no-cache",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "precommit": "lint-staged"
   },
   "devDependencies": {
     "@types/enzyme": "^3.1.8",
@@ -32,10 +33,10 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
     "html-webpack-plugin": "^2.30.1",
+    "husky": "^0.14.3",
     "jest": "^22.1.4",
     "lint-staged": "^6.1.0",
     "node-sass": "^4.7.2",
-    "pre-commit": "^1.2.2",
     "prettier": "^1.10.2",
     "react-docgen-typescript": "^1.2.3",
     "react-styleguidist": "^6.2.2",
@@ -62,7 +63,10 @@
     "redux": "^3.7.2"
   },
   "lint-staged": {
-    "*.{ts,tsx}": ["lint", "ts-check", "test"]
-  },
-  "pre-commit": "lint-staged"
+    "*.{ts,tsx}": [
+      "lint",
+      "ts-check",
+      "test"
+    ]
+  }
 }
