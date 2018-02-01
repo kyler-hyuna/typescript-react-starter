@@ -4,7 +4,7 @@ import Button from '../Button'
 
 describe('Button', () => {
   it('should work', () => {
-    const tree = create(<Button title="I'm a button" />).toJSON()
+    const tree = create(<Buttontitle="I'm a button" />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 })
