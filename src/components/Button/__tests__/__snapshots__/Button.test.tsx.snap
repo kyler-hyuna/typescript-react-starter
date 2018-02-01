@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should work 1`] = `
+<button
+  className="button"
+>
+  I'm a button
+</button>
+`;
