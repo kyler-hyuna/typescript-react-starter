@@ -28,3 +28,4 @@ storybook-static
 dist
 src/**/*.js
 src/**/*.js.map
+styleguide

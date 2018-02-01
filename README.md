@@ -14,5 +14,5 @@ Built On Webpack
 * [x] Redux
 * [x] Sass
 * [x] React Router
-* [ ] Styleguide
+* [x] Styleguide
 * [ ] Precommit Hooks
