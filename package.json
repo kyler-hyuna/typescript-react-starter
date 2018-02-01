@@ -62,7 +62,7 @@
     "redux": "^3.7.2"
   },
   "lint-staged": {
-    "*.{ts,tsx}": "lint && ts-check && test"
+    "*.{ts,tsx}": ["lint", "ts-check", "test"]
   },
   "pre-commit": "lint-staged"
 }

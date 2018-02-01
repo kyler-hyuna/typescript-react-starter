@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './app'
 
-const rootEl = document.getElementById('root')
+const rootEl = document.getElementById(oot')
 
 ReactDOM.render(<App />, rootEl)
 
