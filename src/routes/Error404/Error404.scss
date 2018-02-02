@@ -1,0 +1,24 @@
+.body--404 {
+  color: #fff;
+  min-height: 100vh;
+  background-color: #21232a;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 0;
+  box-shadow: inset 0 0 75pt rgba(0, 0, 0, 0.8);
+  font-family: 'Open Sans', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+
+  &.lead {
+    color: silver;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  &.cover {
+    padding: 0 20px;
+  }
+}
